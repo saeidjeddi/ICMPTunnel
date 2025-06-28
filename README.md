@@ -9,7 +9,7 @@
 &nbsp;&nbsp;&nbsp;
   
   <a href="https://github.com/Qteam-official/ICMPTunnel/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-QTEAM-blue.svg?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/badge/LICENSE-QTEAM-red.svg?style=for-the-badge" alt="License">
   </a>
 
 </p>
