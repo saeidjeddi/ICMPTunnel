@@ -52,6 +52,12 @@ You are **not allowed** to:
 without **explicit written permission** from Q-TEAM.
 
 ---
+> ⚠️ **Important**
+>
+> This project is only for personal use. Please do not use it for illegal purposes or in a production environment.
+
+
+---
 
 ## ⚠️ Disclaimer
 
