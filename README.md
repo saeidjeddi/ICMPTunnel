@@ -2,6 +2,11 @@
   <img src="assets/Q-TEAM.png" width="200">
 </p>
 
+
+<p align="center">
+  <a src="https://github.com/Qteam-official/ICMPTunnel/edit/main/LICENS.md"><img alt="Static Badge" src="https://img.shields.io/badge/LICENSE"></a>
+</p>
+
 ---
 
 # ICMPTunnel
