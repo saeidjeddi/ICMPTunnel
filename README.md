@@ -6,8 +6,7 @@
   <a href="https://github.com/Qteam-official/ICMPTunnel/releases">
     <img src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg" alt="Release">
   </a>
-&nbsp;&nbsp;&nbsp;
-  
+  &nbsp;&nbsp;&nbsp;
   <a href="https://github.com/Qteam-official/ICMPTunnel/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/LICENSE-v1.0.0-red.svg" alt="License">
   </a>
