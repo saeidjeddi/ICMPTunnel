@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="https://github.com/Qteam-official/ICMPTunnel/releases">
-    <img src="https://img.shields.io/badge/RELEASE-v1.0.0-blue.svg?style=for-the-badge" alt="Release">
+    <img src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg" alt="Release">
   </a>
 &nbsp;&nbsp;&nbsp;
   
   <a href="https://github.com/Qteam-official/ICMPTunnel/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-QTEAM-red.svg?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/badge/LICENSE-v1.0.0-red.svg" alt="License">
   </a>
 
 </p>
