@@ -2,14 +2,15 @@
   <img src="assets/Q-TEAM.png" width="200">
 </p>
 
-<p align="center">
-  <a href="./LICENSE">
+<p align="center" style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+  <a href="./LICENSE" style="text-decoration: none;">
     <img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-QTEAM-blue.svg">
   </a>
-  <a href="https://github.com/Qteam-official/ICMPTunnel/releases">
+  <a href="https://github.com/Qteam-official/ICMPTunnel/releases" style="text-decoration: none;">
     <img alt="RELEASE" src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg">
   </a>
 </p>
+
 
 
 ---
