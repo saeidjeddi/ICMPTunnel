@@ -67,7 +67,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 
   🛡️ On the Server machine (e.g. your remote VPS)
 
-###When prompted, select:
+### When prompted, select:
 
   ➡️ Your choice [0/1/2]: 2
 
@@ -78,7 +78,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 
 ---
 
-##**🔐 Requirements**
+## **🔐 Requirements**
 
 + Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
 
