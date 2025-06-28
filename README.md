@@ -44,21 +44,21 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 ## **🔐 Requirements**
 
 # ✅ Supported Platforms ( linux/amd64 ) :
-  +🐧 Ubuntu 18.04, 20.04, 22.04 and newer
-  +🐧 Debian 10, 11, 12+
-  +🐧 Kali Linux
-  +🐧 Linux Mint
-  +🐧 Fedora
-  +🐧 CentOS / AlmaLinux / Rocky
-  +🐧 Arch Linux / Manjaro
-  +🐧 openSUSE
-  +🐧 Pop!_OS, Zorin OS, and most other modern distros
+  + 🐧 Ubuntu 18.04, 20.04, 22.04 and newer
+  + 🐧 Debian 10, 11, 12+
+  + 🐧 Kali Linux
+  + 🐧 Linux Mint
+  + 🐧 Fedora
+  + 🐧 CentOS / AlmaLinux / Rocky
+  + 🐧 Arch Linux / Manjaro
+  + 🐧 openSUSE
+  + 🐧 Pop!_OS, Zorin OS, and most other modern distros
 
 # ⚠️ Not supported on:
-  +❌ 32-bit Linux systems (i386)
-  +❌ ARM devices (like Raspberry Pi)
-  +❌ macOS or Windows
-  +ℹ️ Support for other architectures (e.g. arm64, arm, windows) may be added in future releases.
+  + ❌ 32-bit Linux systems (i386)
+  + ❌ ARM devices (like Raspberry Pi)
+  + ❌ macOS or Windows
+  + ℹ️ Support for other architectures (e.g. arm64, arm, windows) may be added in future releases.
 
 + Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
 + Root is NOT required in most modern systems
