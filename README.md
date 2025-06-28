@@ -10,7 +10,10 @@
   <a href="https://github.com/Qteam-official/ICMPTunnel/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/LICENSE-Q T E A M-red.svg" alt="License">
   </a>
-
+   &nbsp;&nbsp;&nbsp;
+  <a href="https://t.me/Qteam_official">
+    <img src="https://img.shields.io/badge/Telegram-Q T E A M-green.svg" alt="Telegram">
+  </a>
 </p>
 
 
@@ -31,9 +34,9 @@ Quickly tunnel traffic over ICMP in **Client** or **Server** mode.
 
 ---
 
-### 📥 1. One-Line Installer (Recommended)
+### 📥 1. One-Line Installer ( Recommended )
 
-Just run this command to download and start:
+Just run this command to download and start :
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
