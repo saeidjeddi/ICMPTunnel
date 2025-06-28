@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="assets/Q-VPN.jpg" width="200" style="border-radius: 15px;">
+  <img src="assets/Q-VPN.jpg" width="200" style="border-radius: 80px;">
 </p>
+
 ---
 
 # ICMPTunnel
