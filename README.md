@@ -10,6 +10,12 @@
 </p>
 
 
+<p align="center">
+  <a href="https://github.com/Qteam-official/ICMPTunnel/releases">
+    <img alt="LICENSE" src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg">
+  </a>
+</p>
+
 ---
 
 # ICMPTunnel
