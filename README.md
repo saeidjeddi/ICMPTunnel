@@ -75,13 +75,13 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 
   ✅ No additional setup needed — works out-of-the-box.
 
-###🔐 Requirements
 
-  Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
+---
 
-  Root is NOT required in most modern systems
-
-  No ports need to be opened manually — it works via ICMP!
+##🔐 Requirements
+      Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
+      Root is NOT required in most modern systems
+      No ports need to be opened manually — it works via ICMP!
 
 ---
 
