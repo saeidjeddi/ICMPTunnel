@@ -35,10 +35,9 @@ Quickly tunnel traffic over ICMP in **Client** or **Server** mode.
 
 Just run this command to download and start:
 
-<pre>
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
-
+```
 
 ---
 
