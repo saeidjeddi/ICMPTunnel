@@ -32,7 +32,7 @@ It demonstrates tunneling over the ICMP protocol (commonly used by ping).
 
 ### 📥 1. One-Line Installer ( Recommended )
 
-Just run this command to download and start :
++ Just run this command to download and start :
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
