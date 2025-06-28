@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/Q-TEAM.png" width="200" style="border-radius: 80px;">
+  <img src="assets/Q-TEAM.png" width="200">
 </p>
 
 ---
