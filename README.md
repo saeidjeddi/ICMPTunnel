@@ -5,10 +5,11 @@ It demonstrates tunneling over the ICMP protocol (commonly used by ping).
 
 ---
 
-## 🧱 Binary-Only Release
+## 🧱 Binary Distribution
 
-This project is released as a **binary-only** distribution.  
-The **source code is not public** and is not included in this repository.
+This repository contains the official binary release of **ICMPTunnel**, developed by **Q-TEAM**.
+
+It is provided as a ready-to-use executable with no additional components.
 
 ---
 
