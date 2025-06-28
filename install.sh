@@ -2,6 +2,11 @@
 
 set -e
 
+if [ "$EUID" -ne 0 ]; then
+  echo "🛡️ Please enter your password to run as root..."
+  exec sudo bash "$0" "$@"
+fi
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 CYAN='\033[0;36m'
@@ -34,20 +39,23 @@ fi
 
 echo -e "${CYAN}🔗 File: ${NC}$URL"
 
-PID=$(lsof -t "./$FILENAME" 2>/dev/null || true)
-if [ -n "$PID" ]; then
-  echo -e "${YELLOW}⚠️ Killing previous running instance (PID: $PID)...${NC}"
-  kill -9 "$PID"
-  sleep 1
-fi
-
 if [ -f "$FILENAME" ]; then
+  PID=$(lsof -t "./$FILENAME" 2>/dev/null || true)
+  if [ -n "$PID" ]; then
+    echo -e "${YELLOW}⚠️ Killing previous running instance (PID: $PID)...${NC}"
+    kill -9 "$PID"
+    sleep 1
+  fi
   echo -e "${YELLOW}🗑 Removing old binary: $FILENAME${NC}"
   rm -f "$FILENAME"
 fi
 
 echo -e "${YELLOW}⬇️ Downloading latest version...${NC}"
-curl -L -o "$FILENAME" "$URL"
+if command -v aria2c >/dev/null 2>&1; then
+  aria2c -x 16 -s 16 "$URL" -o "$FILENAME"
+else
+  curl -L --retry 3 --connect-timeout 5 --max-time 60 --progress-bar -o "$FILENAME" "$URL"
+fi
 chmod +x "$FILENAME"
 
 echo -e "${GREEN}✅ Downloaded and ready: $FILENAME${NC}"
@@ -62,14 +70,12 @@ while true; do
   read -p "➡️ Your choice [0/1/2]: " mode_raw
   mode=$(echo "$mode_raw" | xargs)
 
-
   if [[ "$mode" == "1" ]]; then
     read -p "🖥 Enter server IP: " ip_raw
     ip=$(echo "$ip_raw" | xargs)
 
     PORT=1010
-
-    PORT_PID=$(lsof -ti tcp:$PORT || true)
+    PORT_PID=$(lsof -ti tcp:$PORT 2>/dev/null || true)
     if [ -n "$PORT_PID" ]; then
       echo -e "${YELLOW}⚠️ Port $PORT is in use (PID: $PORT_PID), killing...${NC}"
       kill -9 "$PORT_PID"
@@ -82,9 +88,8 @@ while true; do
 
   elif [[ "$mode" == "2" ]]; then
     echo -e "${GREEN}🚀 Starting server mode...${NC}"
-    echo -e "${GREEN}✅  Core started successfully ( ${RED}Server )${YELLOW}"
+    echo -e "${GREEN}✅ Core started successfully ( ${RED}Server${GREEN} )${NC}"
     ./"$FILENAME" -type server
-    
     break
 
   elif [[ "$mode" == "0" ]]; then
