@@ -4,8 +4,11 @@
 
 
 <p align="center">
-  <a src="./LICENS"><img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-QTEAM-blue.svg"></a>
+  <a href="./LICENSE">
+    <img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-QTEAM-blue.svg">
+  </a>
 </p>
+
 
 ---
 
