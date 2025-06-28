@@ -1,5 +1,6 @@
-[<img src="assets/Q-VPN.jpg" width="200">](https://github.com/Qteam-official/ICMPTunnel/blob/main/assets/Q-VPN.jpg?raw=true)
-
+<p align="center">
+  <img src="assets/Q-VPN.jpg" width="200" style="border-radius: 15px;">
+</p>
 ---
 
 # ICMPTunnel
