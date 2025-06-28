@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Qteam-official/ICMPTunnel/releases">
+  <a href="./releases">
     <img src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg" alt="Release">
   </a>
   &nbsp;&nbsp;&nbsp;
