@@ -3,14 +3,11 @@
 </p>
 
 <p align="center">
-  <a href="./LICENSE" tabindex="-1">
-    <img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-QTEAM-blue.svg">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Qteam-official/ICMPTunnel/releases" tabindex="-1">
-    <img alt="RELEASE" src="https://img.shields.io/badge/RELEASES-v1.0.0-blue.svg">
-  </a>
+  <img src="https://img.shields.io/badge/RELEASE-v2.6.0-blue" style="margin: 0 6px;" />
+  <img src="https://img.shields.io/badge/BUILD-PASSING-brightgreen" style="margin: 0 6px;" />
+  <img src="https://img.shields.io/badge/LICENSE-GPLv3-blue" style="margin: 0 6px;" />
 </p>
+
 
 
 
