@@ -27,7 +27,17 @@ It demonstrates tunneling over the ICMP protocol (commonly used by ping).
 
 ## 🛠️ How to Use
 
-for use
+Quickly tunnel traffic over ICMP in **Client** or **Server** mode.
+
+---
+
+### 📥 1. One-Line Installer (Recommended)
+
+Just run this command to download and start:
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
+
 
 ---
 
