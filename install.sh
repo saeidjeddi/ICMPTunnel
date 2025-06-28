@@ -34,7 +34,7 @@ fi
 
 echo -e "${CYAN}🔗 File: ${NC}$URL"
 
-PID=$(lsof -t "./$FILENAME" || true)
+PID=$(lsof -t "./$FILENAME" 2>/dev/null || true)
 if [ -n "$PID" ]; then
   echo -e "${YELLOW}⚠️ Killing previous running instance (PID: $PID)...${NC}"
   kill -9 "$PID"
