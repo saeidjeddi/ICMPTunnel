@@ -41,7 +41,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 
 ---
 
-## **🔐 Requirements**
+## **🔐 Requirements 👇🏻**
 
 # ✅ Supported Platforms ( linux/amd64 ) :
   + 🐧 Ubuntu 18.04, 20.04, 22.04 and newer
