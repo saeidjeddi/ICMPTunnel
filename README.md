@@ -30,15 +30,15 @@ It demonstrates tunneling over the ICMP protocol (commonly used by ping).
 
 ## 🛠️ How to Use
 
-### 📥 1. One-Line Installer ( Recommended )
+### 📥 Installer ( Recommended )
 
-+ Just run this command to download and start :
++ 1 - Just run this command to download and start :
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
 ```
 
-+ Then type
++ 2 - Then type
 ```bash
 q-icmp
 ```
@@ -65,9 +65,9 @@ q-icmp
   + ❌ macOS or Windows
   + ℹ️ Support for other architectures (e.g. arm64, arm, windows) may be added in future releases.
 
-+ Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
-+ Root is NOT required in most modern systems
-+ No ports need to be opened manually — it works via ICMP!
+# Ensure ICMP (ping) is allowed on both sides (no firewall blocks)
+# Root is NOT required in most modern systems
+# No ports need to be opened manually — it works via ICMP!
 
 ---
 
