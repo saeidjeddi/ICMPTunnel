@@ -38,6 +38,11 @@ It demonstrates tunneling over the ICMP protocol (commonly used by ping).
 bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main/install.sh)
 ```
 
++ Then type
+```bash
+q-icmp
+```
+
 
 ---
 
