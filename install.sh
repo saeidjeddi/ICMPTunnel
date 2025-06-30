@@ -23,6 +23,35 @@ SERVICE_SERVER="icmptunnel-server.service"
 MODE_FILE="/opt/icmptunnel/mode.conf"
 
 function install_icmp() {
+  INSTALL_MODE=""
+  while true; do
+    clear
+    echo
+    echo -e "${CYAN}"
+    echo "╭────────────────────────────────────────────────────────────╮"
+    echo "│                  🚀  ICMPTunnel Installer                  │"
+    echo "│                                                            │"
+    echo "│      🛰  Lightweight Tunneling over ICMP Protocol          │"
+    echo "│      🧠  Developed with 💙  by Q-TEAM                      │"
+    echo "│      📢  Telegram: @Qteam_official                        │"
+    echo "╰────────────────────────────────────────────────────────────╯"
+    echo -e "${NC}"
+    echo
+    echo -e "${YELLOW}💡 Select installation mode:${NC}"
+    echo -e "${CYAN}1)${NC} Online Installation (Download from GitHub)"
+    echo -e "${CYAN}2)${NC} Offline Installation (Use local file)"
+    read -p "➡️  Your choice [1/2]: " install_choice
+    if [[ "$install_choice" == "1" ]]; then
+      INSTALL_MODE="online"
+      break
+    elif [[ "$install_choice" == "2" ]]; then
+      INSTALL_MODE="offline"
+      break
+    else
+      echo -e "${RED}❌ Invalid option. Please choose 1 or 2.${NC}"
+    fi
+  done
+
   while true; do
     clear
     echo
@@ -54,20 +83,34 @@ function install_icmp() {
     read -p "🖥 Enter server IP address: " SERVER_IP
   fi
 
-  echo -e "${CYAN}📦 Downloading latest release...${NC}"
-  URL=$(curl -s $GITHUB_API | grep browser_download_url | grep "$BINARY_NAME" | cut -d '"' -f 4)
+  if [[ "$INSTALL_MODE" == "online" ]]; then
+    echo -e "${CYAN}📦 Downloading latest release from GitHub...${NC}"
+    URL=$(curl -s $GITHUB_API | grep browser_download_url | grep "$BINARY_NAME" | cut -d '"' -f 4)
 
-  if [[ -z "$URL" ]]; then
-    echo -e "${RED}❌ Failed to fetch download URL.${NC}"
-    exit 1
+    if [[ -z "$URL" ]]; then
+      echo -e "${RED}❌ Failed to fetch download URL. Exiting.${NC}"
+      exit 1
+    fi
+
+    TMP_BIN="/tmp/$BINARY_NAME"
+
+    echo -e "${YELLOW}⬇️ Downloading from: $URL${NC}"
+    curl -L -# -o "$TMP_BIN" "$URL"
+    chmod +x "$TMP_BIN"
+    mv "$TMP_BIN" "$INSTALL_PATH"
+  elif [[ "$INSTALL_MODE" == "offline" ]]; then
+    SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+    LOCAL_BIN="$SCRIPT_DIR/$BINARY_NAME"
+    echo -e "${CYAN}🔍 Checking for local file: $LOCAL_BIN${NC}"
+    if [[ -f "$LOCAL_BIN" ]]; then
+      echo -e "${GREEN}✅ Local binary found. Installing...${NC}"
+      chmod +x "$LOCAL_BIN"
+      cp "$LOCAL_BIN" "$INSTALL_PATH"
+    else
+      echo -e "${RED}❌ Local binary '$BINARY_NAME' not found next to the script. Please place it there or choose online installation. Exiting.${NC}"
+      exit 1
+    fi
   fi
-
-  TMP_BIN="/tmp/$BINARY_NAME"
-
-  echo -e "${YELLOW}⬇️ Downloading from: $URL${NC}"
-  curl -L -# -o "$TMP_BIN" "$URL"
-  chmod +x "$TMP_BIN"
-  mv "$TMP_BIN" "$INSTALL_PATH"
 
   cat <<EOF > /usr/local/bin/icmptunnel-updater.sh
 #!/bin/bash
@@ -88,6 +131,7 @@ SERVICE=""
 [[ "\$MODE" == "1" ]] && SERVICE="$SERVICE_CLIENT"
 [[ "\$MODE" == "2" ]] && SERVICE="$SERVICE_SERVER"
 
+# This updater script will always try to update from GitHub.
 URL=\$(curl -s \$GITHUB_API | grep browser_download_url | grep "\$BINARY_NAME" | cut -d '"' -f 4)
 TMP_BIN="/tmp/\$BINARY_NAME.new"
 curl -sL "\$URL" -o "\$TMP_BIN"
@@ -196,7 +240,7 @@ while true; do
       exit 0
       ;;
     *) echo -e "\${RED}❌ Invalid choice\${NC}" ;;
-  esac 
+  esac
 done
 EOF
   if [[ "$mode" == "1" ]]; then
