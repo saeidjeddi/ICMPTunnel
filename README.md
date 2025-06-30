@@ -43,6 +43,35 @@ bash <(curl -Ls https://raw.githubusercontent.com/Qteam-official/ICMPTunnel/main
 q-icmp
 ```
 
+### 📦 Offline Installation (Internet restrictions)
+
+If you want to install ICMPTunnel without downloading from GitHub (for example, in an offline environment), follow these steps:
+
+1. **Download the latest release binary** (`ICMPTunnel`) from the [Releases page](https://github.com/Qteam-official/ICMPTunnel/releases) using another computer with internet access.
+2. **Copy** both `install.sh` and the downloaded `ICMPTunnel` binary to your target (offline) Linux machine, placing them in the same directory.
+3. **Make sure both files are executable:**
+
+```bash
+chmod +x install.sh ICMPtunnel
+```
+
+4. **Run the installer:**
+
+```bash
+sudo ./install.sh
+```
+
+5. When prompted, select `2` for **Offline Installation**.
+6. Follow the interactive prompts to choose Client or Server mode and complete the setup.
+
+After installation, you can manage the tunnel using:
+
+```bash
+q-icmp
+```
+
+> **Note:** The binary file must be named exactly `ICMPTunnel` and be in the same directory as `install.sh` during installation.
+
 
 ---
 
