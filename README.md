@@ -133,9 +133,12 @@ Use of this tool is limited to **legal, educational, or testing purposes in cont
 
 ---
 
-## 📈 Stargazers over Time
+## 📈 Star History
 
-![Star history chart](https://api.star-history.com/svg?repos=Qteam-official/ICMPTunnel&type=Date)
+[![Star Chart](https://api.star-history.com/svg?repos=Qteam-official/ICMPTunnel&type=Date&theme=dark)](https://star-history.com/#Qteam-official/ICMPTunnel&Date)
+
+> Growth of the community over time 🚀 — Thank you for every ⭐!
+
 
 ---
 
