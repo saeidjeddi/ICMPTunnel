@@ -133,4 +133,10 @@ Use of this tool is limited to **legal, educational, or testing purposes in cont
 
 ---
 
+## 📈 Stargazers over Time
+
+![Star history chart](https://api.star-history.com/svg?repos=Qteam-official/ICMPTunnel&type=Date)
+
+---
+
 © 2025 Q-TEAM. All rights reserved.
